@@ -26,3 +26,13 @@ Mi Card is a personal business card. Imagine every time you wanted to give someo
 >This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
 ![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+
+# What I've learned
+
+1. *SafeArea* helps your widget be showed
+   where the user can actually see it
+   Usually below the *Android Status Bar*<br/>
+   ![android status bar](./images/status_bar.png)<br/>
+   (where you can see the battery and signal level)
+   and *Navigation Buttons* <br/>
+   ![navigation buttons](./images/navigation_buttons.png)
