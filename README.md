@@ -36,3 +36,5 @@ Mi Card is a personal business card. Imagine every time you wanted to give someo
    (where you can see the battery and signal level)
    and *Navigation Buttons* <br/>
    ![navigation buttons](./images/navigation_buttons.png)
+2. To add a font, you need to download the ttf file from [Google Fonts]("https://fonts.google.com/")
+3. Add the ttf file to the fonts section in pubspec.yaml

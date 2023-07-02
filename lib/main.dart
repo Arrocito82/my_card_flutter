@@ -23,17 +23,19 @@ class MyApp extends StatelessWidget {
               Text(
                 "Andrea Monterrosa",
                 style: TextStyle(
-                    color: Colors.white70,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: "Orbitron"),
+                    color: Colors.white,
+                    fontSize: 40,
+                    // fontWeight: FontWeight.normal,
+                    fontFamily: "Pacifico"),
                 textAlign: TextAlign.center,
               ),
               Text(
                 "Flutter Developer",
                 style: TextStyle(
-                    color: Colors.white70,
-                    fontSize: 20,
+                    color: Colors.teal.shade100,
+                    letterSpacing: 2.5,
+                    fontFamily: "Orbitron",
+                    fontSize: 25,
                     fontWeight: FontWeight.w500),
                 textAlign: TextAlign.center,
               ),
@@ -53,6 +55,7 @@ class MyApp extends StatelessWidget {
                         image: AssetImage("images/icons8-phone-50.png"),
                         fit: BoxFit.contain,
                         width: 30.0,
+                        color: Colors.teal,
                       ),
                     ),
                     Text("+501 2250-555")
@@ -71,6 +74,7 @@ class MyApp extends StatelessWidget {
                         image: AssetImage("images/icons8-email-30.png"),
                         fit: BoxFit.contain,
                         width: 30.0,
+                        color: Colors.teal,
                       ),
                     ),
                     Text("moralesandrea.edr4@gmail.com")
