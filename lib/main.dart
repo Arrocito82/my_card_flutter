@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.amber,
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
                 "Andrea Monterrosa",
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 35,
+                    fontSize: 40,
                     // fontWeight: FontWeight.normal,
                     fontFamily: "Pacifico"),
                 textAlign: TextAlign.center,
@@ -31,72 +31,63 @@ class MyApp extends StatelessWidget {
               Text(
                 "Flutter Developer",
                 style: TextStyle(
-                    color: Colors.teal.shade100,
+                    color: Colors.deepPurple,
                     letterSpacing: 2.5,
                     fontFamily: "Orbitron",
                     fontSize: 20,
-                    fontWeight: FontWeight.w500),
+                    fontWeight: FontWeight.w900),
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                width: 100.0,
-                height: 1.0,
+                width: 150.0,
+                height: 25.0,
+                child: Divider(
+                  color: Colors.white70,
+                  thickness: 2,
+                ),
               ),
               Card(
-                color: Colors.white,
+                // color: Colors.white, // Card are white by default
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    // mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Icon(
-                        Icons.phone_iphone,
-                        color: Colors.teal,
-                        size: 20.0,
-                      ),
-                      SizedBox(width: 10.0),
-                      Text(
-                        "+501 2250-555",
-                        style: TextStyle(
-                            fontFamily: "Orbitron",
-                            fontWeight: FontWeight.bold,
-                            fontSize: 14.0,
-                            color: Colors.teal,
-                            letterSpacing: 1.5),
-                      )
-                    ],
+                child: ListTile(
+                  dense: true,
+                  visualDensity: VisualDensity.compact,
+                  leading: Icon(
+                    Icons.phone_iphone,
+                    color: Colors.deepPurple,
+                    size: 20.0,
+                  ),
+                  title: Text(
+                    "+501 2250-555",
+                    style: TextStyle(
+                        fontFamily: "Orbitron",
+                        fontWeight: FontWeight.bold,
+                        fontSize: 13.0,
+                        color: Colors.deepPurple,
+                        letterSpacing: 1.5),
                   ),
                 ),
               ),
               Card(
-                // padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 color: Colors.white,
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    // mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Icon(
-                        Icons.email_rounded,
-                        color: Colors.teal,
-                        size: 20.0,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        "moralesandrea.edr4@gmail.com",
-                        style: TextStyle(
-                          fontFamily: "Orbitron",
-                          fontWeight: FontWeight.w700,
-                          fontSize: 14.0,
-                          color: Colors.teal,
-                          letterSpacing: 1.5,
-                        ),
-                      )
-                    ],
+                child: ListTile(
+                  dense: true,
+                  visualDensity: VisualDensity.compact,
+                  leading: Icon(
+                    Icons.email_rounded,
+                    color: Colors.deepPurple,
+                    size: 20.0,
+                  ),
+                  title: Text(
+                    "moralesandrea.edr4@gmail.com",
+                    style: TextStyle(
+                      fontFamily: "Orbitron",
+                      fontWeight: FontWeight.bold,
+                      fontSize: 13.0,
+                      color: Colors.deepPurple,
+                      letterSpacing: 1.5,
+                    ),
                   ),
                 ),
               ),
